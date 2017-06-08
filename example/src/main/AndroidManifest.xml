@@ -28,6 +28,7 @@
         <activity android:name=".widget.RoundImageActivity" />
         <activity android:name=".widget.FlowLayoutActivity" />
         <activity android:name=".lib.PicassoTestActivity" />
+        <activity android:name=".widget.WaveProgressViewActivity"></activity>
     </application>
 
 </manifest>

@@ -44,4 +44,8 @@ public class UIActivity extends AppCompatActivity {
     public void flowLayoutClick(View view) {
         startActivity(new Intent(this, FlowLayoutActivity.class));
     }
+
+    public void waveProgressViewClick(View view) {
+        startActivity(new Intent(this, WaveProgressViewActivity.class));
+    }
 }
