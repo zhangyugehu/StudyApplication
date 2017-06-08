@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thssh.example.widget.UIActivity">
+
+    <TextView
+        android:id="@+id/tv_percent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="百分比布局"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="percentLayoutClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/tv_shader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shader着色器"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="shaderClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/tv_zoom_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ZoomImage"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="zoomImageClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearGradientTextView"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="linearGradientTextViewClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xfermode_RoundeImageView"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="roundeImageViewClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlowLayout"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:onClick="flowLayoutClick"/>
+    <View
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':pdfviewer', ':widget', ':example', ':okhttpexample', ':sqlorm', ':appbadge', ':fragmentframe', ':miccloudapp', ':myhandler', ':handler_msg_system', ':httpprocessor'
