@@ -1,1 +1,1 @@
-include ':app', ':pdfviewer', ':widget', ':example', ':okhttpexample', ':sqlorm', ':appbadge', ':fragmentframe', ':miccloudapp', ':myhandler', ':handler_msg_system', ':httpprocessor'
+include ':AppSkin', ':pdfviewer', ':widget', ':example', ':okhttpexample', ':sqlorm', ':fragmentframe', ':miccloudapp', ':myhandler', ':handler_msg_system', ':httpprocessor', ':recycler'

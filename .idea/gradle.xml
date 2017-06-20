@@ -8,8 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/appbadge" />
+            <option value="$PROJECT_DIR$/AppSkin" />
             <option value="$PROJECT_DIR$/example" />
             <option value="$PROJECT_DIR$/fragmentframe" />
             <option value="$PROJECT_DIR$/handler_msg_system" />
@@ -18,6 +17,7 @@
             <option value="$PROJECT_DIR$/myhandler" />
             <option value="$PROJECT_DIR$/okhttpexample" />
             <option value="$PROJECT_DIR$/pdfviewer" />
+            <option value="$PROJECT_DIR$/recycler" />
             <option value="$PROJECT_DIR$/sqlorm" />
             <option value="$PROJECT_DIR$/widget" />
           </set>
