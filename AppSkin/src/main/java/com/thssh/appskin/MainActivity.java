@@ -1,8 +1,11 @@
 package com.thssh.appskin;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.view.View;
+
+import java.io.File;
 
 
 public class MainActivity extends SkinActivity {
@@ -14,5 +17,7 @@ public class MainActivity extends SkinActivity {
     }
 
     public void btnClick(View view) {
+
+        changeSkin(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "skintest.apk");
     }
 }

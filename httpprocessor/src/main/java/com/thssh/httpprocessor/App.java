@@ -3,6 +3,7 @@ package com.thssh.httpprocessor;
 import android.app.Application;
 
 import com.thssh.httpprocessor.impl.HttpDelegater;
+import com.thssh.httpprocessor.impl.OkHttpProcessor;
 
 /**
  * @author zhangyugehu

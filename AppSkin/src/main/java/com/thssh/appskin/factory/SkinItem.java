@@ -12,7 +12,7 @@ public class SkinItem {
 
     /*
     * android:background="@drawable/ic_launcher"
-    * android:[attrName] = "@[attrType/attrValue]"(rId)
+    * android:[attrName] = "@[attrType/attrValue](rId)"
     */
 
     private String attrName;

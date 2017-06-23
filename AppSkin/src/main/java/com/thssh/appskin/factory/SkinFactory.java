@@ -6,7 +6,14 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+
+import com.thssh.appskin.factory.view.SkinView;
+import com.thssh.appskin.factory.view.impl.ButtonSkinView;
+import com.thssh.appskin.factory.view.impl.EditTextSkinView;
+import com.thssh.appskin.factory.view.impl.TextSkinView;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -28,7 +35,7 @@ public class SkinFactory implements LayoutInflaterFactory {
             "android.webkit."
     };
 
-    private List<AbsSkinView> mCacheList;
+    private List<SkinView> mCacheList;
 
     @Override
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
@@ -40,38 +47,41 @@ public class SkinFactory implements LayoutInflaterFactory {
         }else{
             for(String pkg : packages){
                 view = createView(parent, pkg + name, context, attrs);
-                if(view != null){
-                    break;
-                }
+                if(view != null){ break; }
             }
         }
-        parseViewSkin(context, view, attrs);
+        computerSkinView(context, view, attrs);
         return view;
     }
 
-    private void parseViewSkin(Context context, View view, AttributeSet attrs) {
+    private void computerSkinView(Context context, View view, AttributeSet attrs) {
         List<SkinItem> items = new ArrayList<>();
         for(int i = 0; i < attrs.getAttributeCount(); i++){
             String attributeName = attrs.getAttributeName(i);
             String attributeValue = attrs.getAttributeValue(i);
 
-            if(TextUtils.equals(attributeName, "background") || TextUtils.equals(attributeName, "textColor")){
+            if(TextUtils.equals(attributeName, "background")
+                    || TextUtils.equals(attributeName, "textColor")){
 
                 int id = Integer.parseInt(attributeValue.replaceAll("^@", ""));
                 String entryName = context.getResources().getResourceEntryName(id);
                 String typeName = context.getResources().getResourceTypeName(id);
                 SkinItem item = new SkinItem(attributeName, id, typeName, entryName);
                 items.add(item);
-                Log.d(TAG, "parseViewSkin: " + item);
+                Log.d(TAG, "computerSkinView: " + item);
             }
         }
 
         if(!items.isEmpty()){
+            SkinView skinView = null;
             if(view instanceof TextView){
-                AbsSkinView skinView = new TextViewSkin((TextView) view, items);
-                mCacheList.add(skinView);
-                skinView.apply();
+                skinView = new TextSkinView((TextView) view, items);
+            }else if(view instanceof Button){
+                skinView = new ButtonSkinView((Button) view, items);
+            }else if(view instanceof EditText){
+                skinView = new EditTextSkinView((EditText) view, items);
             }
+            if(skinView != null) { mCacheList.add(skinView);}
         }
     }
 
@@ -93,5 +103,12 @@ public class SkinFactory implements LayoutInflaterFactory {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void apply() {
+        if(mCacheList == null){return; }
+        for(SkinView skinView:mCacheList){
+            skinView.apply();
+        }
     }
 }

@@ -11,13 +11,14 @@
             <option value="$PROJECT_DIR$/AppSkin" />
             <option value="$PROJECT_DIR$/example" />
             <option value="$PROJECT_DIR$/fragmentframe" />
+            <option value="$PROJECT_DIR$/fragmentnormalusage" />
             <option value="$PROJECT_DIR$/handler_msg_system" />
             <option value="$PROJECT_DIR$/httpprocessor" />
             <option value="$PROJECT_DIR$/miccloudapp" />
             <option value="$PROJECT_DIR$/myhandler" />
-            <option value="$PROJECT_DIR$/okhttpexample" />
             <option value="$PROJECT_DIR$/pdfviewer" />
             <option value="$PROJECT_DIR$/recycler" />
+            <option value="$PROJECT_DIR$/skintest" />
             <option value="$PROJECT_DIR$/sqlorm" />
             <option value="$PROJECT_DIR$/widget" />
           </set>

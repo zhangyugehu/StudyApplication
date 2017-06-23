@@ -6,13 +6,14 @@
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentframe/fragmentframe.iml" filepath="$PROJECT_DIR$/fragmentframe/fragmentframe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragmentnormalusage/fragmentnormalusage.iml" filepath="$PROJECT_DIR$/fragmentnormalusage/fragmentnormalusage.iml" />
       <module fileurl="file://$PROJECT_DIR$/handler_msg_system/handler_msg_system.iml" filepath="$PROJECT_DIR$/handler_msg_system/handler_msg_system.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpprocessor/httpprocessor.iml" filepath="$PROJECT_DIR$/httpprocessor/httpprocessor.iml" />
       <module fileurl="file://$PROJECT_DIR$/miccloudapp/miccloudapp.iml" filepath="$PROJECT_DIR$/miccloudapp/miccloudapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/myhandler/myhandler.iml" filepath="$PROJECT_DIR$/myhandler/myhandler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/okhttpexample/okhttpexample.iml" filepath="$PROJECT_DIR$/okhttpexample/okhttpexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/pdfviewer/pdfviewer.iml" filepath="$PROJECT_DIR$/pdfviewer/pdfviewer.iml" />
       <module fileurl="file://$PROJECT_DIR$/recycler/recycler.iml" filepath="$PROJECT_DIR$/recycler/recycler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skintest/skintest.iml" filepath="$PROJECT_DIR$/skintest/skintest.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlorm/sqlorm.iml" filepath="$PROJECT_DIR$/sqlorm/sqlorm.iml" />
       <module fileurl="file://$PROJECT_DIR$/widget/widget.iml" filepath="$PROJECT_DIR$/widget/widget.iml" />
     </modules>

@@ -7,6 +7,7 @@ import android.support.v4.view.LayoutInflaterCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import com.thssh.appskin.factory.SkinFactory;
+import com.thssh.appskin.factory.SkinManager;
 
 /**
  * @author zhangyugehu
@@ -17,18 +18,19 @@ import com.thssh.appskin.factory.SkinFactory;
 public class SkinActivity extends Activity {
 
     private SkinFactory mSkinFactory;
+    private SkinManager mSkinManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mSkinFactory = new SkinFactory();
         LayoutInflaterCompat.setFactory(getLayoutInflater(), mSkinFactory);
+        mSkinManager = SkinManager.getInstance();
+        mSkinManager.init(this);
     }
 
-
-//    @Override
-//    protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//    }
+    protected void changeSkin(String path){
+        mSkinManager.loadSkin(path);
+        mSkinFactory.apply();
+    }
 }

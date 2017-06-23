@@ -1,1 +1,1 @@
-include ':AppSkin', ':pdfviewer', ':widget', ':example', ':okhttpexample', ':sqlorm', ':fragmentframe', ':miccloudapp', ':myhandler', ':handler_msg_system', ':httpprocessor', ':recycler'
+include ':AppSkin', ':pdfviewer', ':widget', ':example', ':sqlorm', ':fragmentframe', ':miccloudapp', ':myhandler', ':handler_msg_system', ':httpprocessor', ':recycler', ':fragmentnormalusage', ':skintest'
